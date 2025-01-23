@@ -107,7 +107,7 @@ public partial class MainWindow : Window
         {
             return false;
         }
-        if (!Uri.TryCreate(url, UriKind.Absolute, out Uri? uri) || !uri.Host.Contains("youtube.com", StringComparison.OrdinalIgnoreCase))
+        if (!Uri.TryCreate(url, UriKind.Absolute, out Uri? uri))
         {
             return false;
         }
